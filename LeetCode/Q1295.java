@@ -1,5 +1,3 @@
-package LeetCode;
-
 // Q: Given an array nums of integers, return how many of them contain an even number of digits.
 
 // Runtime: 1ms Beats 99.54%
