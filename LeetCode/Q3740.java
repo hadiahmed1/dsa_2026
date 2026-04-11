@@ -7,6 +7,8 @@
 // Runtime 1 ms Beats 100.00% 
 // Memory 44.45 MB Beats 59.16%
 
+import java.util.HashMap;
+
 public class Q3740 {
     public int linearSearch(int[] arr, int t, int l) {
         for (int i = l; i < arr.length; i++) {
@@ -16,9 +18,19 @@ public class Q3740 {
         return -1;
     }
 
+    public HashMap<Integer, Integer> elementCount(int[] arr) {
+        HashMap<Integer, Integer> m = new HashMap<>();
+        for (int n : arr)
+            m.put(n, m.getOrDefault(n, 0) + 1);
+        return m;
+    }
+
     public int minimumDistance(int[] nums) {
         int distance = Integer.MAX_VALUE;
+        HashMap<Integer, Integer> m = elementCount(nums);
         for (int i = 0; i < nums.length - 2; i++) {
+            if (m.getOrDefault(nums[i], 0) < 3)
+                continue;
             int j = linearSearch(nums, nums[i], i + 1);
             if (j == -1)
                 continue;
