@@ -8,6 +8,10 @@
 // Runtime 1 ms Beats 29.87% 
 // Memory 46.57 MB Beats 79.22%
 
+// OPTIMIZED:
+// Runtime 0 ms Beats 100.00%
+// Memory 46.66 MB Beats 70.13%
+
 public class Q2515 {
     public int closestTarget(String[] arr, String t, int si) {
         int r = 0;
@@ -28,5 +32,34 @@ public class Q2515 {
         if (r == arr.length) return -1;
 
         return Math.min(l,r);   
+    }
+
+    static int distance(int s, int e, int len) {
+        int r, l;
+        if (s == e)
+            return 0;
+        else if (s < e) {
+            r = e - s;
+            l = s + len - e;
+            return Math.min(r,l);
+        }
+        r = len - s +e;
+        l = s -e;
+        // System.out.println(r+" "+l);
+        return Math.min(r,l);
+    }
+
+    public int closestTarget_OPTIMIZED(String[] arr, String t, int si) {
+        int min = Integer.MAX_VALUE;
+        boolean found = false;
+        for(int i =0; i<arr.length;i++) {
+            if(arr[i].equals(t)) {
+                found = true;
+                min = Math.min(min, distance(si, i, arr.length));
+                // System.out.println(i+" "+min);
+            }
+        }
+
+        return found ? min : -1;
     }
 }
