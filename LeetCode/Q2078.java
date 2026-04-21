@@ -12,7 +12,7 @@ public class Q2078 {
         int n = colors.length;
         int max = 0;
         for (int i = 0; i < n; i++) {
-            if (n - 1 - i < max)
+            if (n - 1 - i < max) // no need to check futher
                 break;
             for (int j = n - 1; j > i; j--) {
                 if (j - i < max)
