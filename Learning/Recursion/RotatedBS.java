@@ -1,5 +1,3 @@
-package Learning.Recursion;
-
 public class RotatedBS {
     static int search(int[] arr, int target, int s, int e) {
         if (s > e)

@@ -1,5 +1,3 @@
-package Learning.Recursion;
-
 public class Reverse {
     static int reverse(int n, int mul) {
         if(n<10) return n;

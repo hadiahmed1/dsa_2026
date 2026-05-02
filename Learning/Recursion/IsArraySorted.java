@@ -1,5 +1,3 @@
-package Learning.Recursion;
-
 import java.util.ArrayList;
 
 class IsArraySorted {

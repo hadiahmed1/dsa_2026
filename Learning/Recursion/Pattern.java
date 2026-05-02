@@ -1,5 +1,3 @@
-package Learning.Recursion;
-
 class Pattern {
     static void printRevTriangle(int n) {
         String s = "";
