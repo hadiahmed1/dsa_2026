@@ -1,14 +1,12 @@
-// 2033. Minimum Operations to Make a Uni-Value Grid
-// You are given a 2D integer grid of size m x n and an integer x. In one operation, you can add x to or subtract x from any element in the grid.
-// A uni-value grid is a grid where all the elements of it are equal.
-// Return the minimum number of operations to make the grid uni-value. If it is not possible, return -1.
+// Q2033. Minimum Operations to Make a Uni-Value Grid
 
-// Runtime 35 ms Beats 81.82%
-// Memory 111.28 MB Beats 44.70%
+// Runtime 35 ms Beats 72.44%
+// Memory 111.3 MB Beats 34.71%
 
-import java.util.Arrays;
+import java.util.*;
 
-public class Q2033 {
+class Q2033 {
+
     public int minOperations(int[][] grid, int x) {
         int r = grid.length;
         int c = grid[0].length;
@@ -34,5 +32,6 @@ public class Q2033 {
         }
 
         return ops;
+
     }
 }
