@@ -1,7 +1,7 @@
 // Q396. Rotate Function
 
 // Runtime 3 ms Beats 100.00%
-// Memory 90.6 MB Beats 49.30%
+// Memory 90.6 MB Beats 47.19%
 
 import java.util.*;
 
