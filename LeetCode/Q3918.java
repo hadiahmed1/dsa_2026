@@ -1,7 +1,7 @@
 // Q3918. Sum of Primes Between Number and Its Reverse
 
-// Runtime 38 ms Beats 14.27%
-// Memory 46.8 MB Beats 5.09%
+// Runtime 38 ms Beats 0.00%
+// Memory 46.8 MB Beats 0.00%
 
 import java.util.*;
 
