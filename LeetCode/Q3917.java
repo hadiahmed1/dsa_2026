@@ -1,7 +1,7 @@
 // Q3917. Count Indices With Opposite Parity
 
 // Runtime 1 ms Beats 100.00%
-// Memory 46.7 MB Beats 94.74%
+// Memory 46.7 MB Beats 100.00%
 
 import java.util.*;
 
