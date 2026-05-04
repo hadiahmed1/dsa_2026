@@ -1,7 +1,7 @@
 // Q788. Rotated Digits
 
-// Runtime 3 ms Beats 91.63%
-// Memory 41.8 MB Beats 96.38%
+// Runtime 3 ms Beats 92.32%
+// Memory 41.8 MB Beats 94.92%
 
 import java.util.*;
 
