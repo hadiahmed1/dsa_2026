@@ -1,7 +1,7 @@
 // Q2033. Minimum Operations to Make a Uni-Value Grid
 
-// Runtime 33 ms Beats 83.09%
-// Memory 111.3 MB Beats 34.70%
+// Runtime 33 ms Beats 83.08%
+// Memory 111.3 MB Beats 34.66%
 
 import java.util.*;
 
