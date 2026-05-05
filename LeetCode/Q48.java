@@ -1,7 +1,7 @@
 // Q48. Rotate Image
 
 // Runtime 0 ms Beats 100.00%
-// Memory 43.5 MB Beats 84.65%
+// Memory 43.5 MB Beats 84.77%
 
 import java.util.*;
 
