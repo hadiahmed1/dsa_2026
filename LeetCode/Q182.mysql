@@ -1,0 +1,9 @@
+// Q182. Duplicate Emails
+
+// Runtime 439 ms Beats 13.21%
+// Memory 0B Beats 100.00%
+
+# Write your MySQL query statement below
+SELECT email FROM person
+GROUP BY email
+HAVING COUNT(email) > 1;
